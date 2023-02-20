@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <ul class="sidebar-ul">
+          <li class="sidebar-heading textAlign-center">SUBEXPERT</li>
+        </ul>
+      </div>
+      <div class="sidebar-buttons">
+        <p class="highlighted">Main Menu</p>
+        <ul class="sidebar-ul">
+          <li class="btn bg-dark">Dashboard</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p class="highlighted">Overview</p>
+        </div>
+        <div>
+          <button class="btn bg-danger">Close Applications</button>
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <h4>Session</h4>
+          <h3>Fall 2023</h3>
+        </div>
+        <div class="box">
+          <h4>Total Applicants</h4>
+          <h3>25</h3>
+        </div>
+        <div class="box">
+          <h4>Disciplines</h4>
+          <h3>5</h3>
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <h4>Application Status</h4>
+          <h3 class="color-success">Open</h3>
+        </div>
+        <div class="box">
+          <h4>Application Deadline</h4>
+          <h3>20 March, 2023</h3>
+        </div>
+      </div>
+
+      <div
+        class="chart-container bg-primary shadow"
+        style="display: flex; justify-content: center"
+      >
+        <canvas id="myChart" width="600" height="250"></canvas>
+      </div>
+
+      <div
+        class="chart-container bg-primary shadow"
+        style="margin-top: 30px; margin-bottom: 30px; padding: 15px"
+      >
+        <div class="table-bar">
+          <div>
+            <input class="search-bar" type="text" placeholder="Search" />
+            <button class="btn bg-dark">Search</button>
+          </div>
+          <button class="btn bg-dark">Generate Merit List</button>
+        </div>
+        <div style="display: flex; justify-content: center; column-gap: 10px">
+          <div>
+            <div class="categories">
+              <li class="categories-li categories-li-heading">
+                All Applicants <span class="selected">230</span>
+              </li>
+              <li class="categories-li">
+                Computer Science <span class="selected">50</span>
+              </li>
+              <li class="categories-li">BBA <span class="selected">5</span></li>
+              <li class="categories-li">
+                Software Engineering <span class="selected">30</span>
+              </li>
+              <li class="categories-li">
+                Computer Engineering <span class="selected">20</span>
+              </li>
+              <li class="categories-li">
+                Civil Engineering <span class="selected">20</span>
+              </li>
+            </div>
+          </div>
+          <table>
+            <tr>
+              <th>Sr. No</th>
+              <th>Name</th>
+              <th>Father Name</th>
+              <th>City</th>
+              <th>Aggregate</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Idris</td>
+              <td>Ahmed Ali</td>
+              <td>Lahore</td>
+              <td>87.5</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Usama</td>
+              <td>Waris Khan</td>
+              <td>Islamabad</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ahmed</td>
+              <td>Anjum Shah</td>
+              <td>Karachi</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Bilal</td>
+              <td>Rizwan</td>
+              <td>Abbottabad</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Rizwan</td>
+              <td>Rahil</td>
+              <td>Faislabad</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Sayed</td>
+              <td>Shah Mohsin</td>
+              <td>Abbottabad</td>
+              <td>90</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-bar">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
